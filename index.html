@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="d3_labeler/labeler.js"></script>
+  <script src="labeler.js"></script>
   <style>
     .label {
       font: 12px sans-serif;
@@ -207,7 +207,7 @@
 
   function updateChart(activeID,svg,scale){
 
-    d3.csv("data/neighborhoods44.csv", function(error, data){
+    d3.csv("neighborhoods44.csv", function(error, data){
       if(error) return console.warn(error);
       var ethdata = [
         {
